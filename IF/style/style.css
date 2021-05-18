@@ -3,16 +3,21 @@ body{
 }
 header{
     position: fixed;
-    background-color: cornflowerblue;
+    background-color: #320a45;
     width: 100%;
     height: 40px;
     padding: 12px 24px;
+    color: azure;
+    font-size: 23px;
+    font-weight: bold;
+    border-bottom: #586173 4px solid;
 }
 main{
     padding-top:84px;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
 
 section{
@@ -23,7 +28,6 @@ section{
     grid-column: 1/3;
     position: relative;
     padding: 0 40px;
-    border: 1px solid black;
 
 }
 .fixtures{
@@ -36,16 +40,21 @@ section{
 .fixt_btns{
     display: flex;
     justify-content: center;
-    background-color: crimson;
+    background-color: #3485A9;
 }
 input[type="date"]{
-    width: 300px;
+    width: 215px;
     text-align: center;
     height: 45px;
+    font-size: 19px;
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: none;
 }
 .showFixt{
     border: solid 1px black;
-    margin-top: 20px;
+    margin-top: 5px;
     display: inline-block;
     
 }
@@ -67,4 +76,20 @@ input[type="date"]{
 .showFixt td img{
     width: 35px;
     height: 35px;
+}
+.googleAd{
+    grid-column: 1/3;
+}
+.standing_top{
+    grid-column: 1/3;
+}
+.leagueSelect{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+}
+
+.leagueSelect button{
+    width: 200px;
+    height: 50px;
 }
