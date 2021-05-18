@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+header{
+    position: fixed;
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 40px;
+    padding: 12px 24px;
+}
+main{
+    padding-top:84px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section{
+    border: 1px solid blueviolet;
+    
+}
+.fixture{
+    grid-column: 1/3;
+    position: relative;
+    padding: 0 40px;
+    border: 1px solid black;
+
+}
+.fixtures{
+    border: 1px solid black;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+.fixt_btns{
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+}
+input[type="date"]{
+    width: 300px;
+    text-align: center;
+    height: 45px;
+}
+.showFixt{
+    border: solid 1px black;
+    margin-top: 20px;
+    display: inline-block;
+    
+}
+.showFixt table{
+    border: black 1px solid;
+    margin: 0 5px;
+    float: left;
+    padding: 0px;
+    margin-bottom: 3px;
+}
+.showFixt th{
+    width: 91px;
+}
+.showFixt td{
+    width: 91px;
+    text-align: center;
+    
+}
+.showFixt td img{
+    width: 35px;
+    height: 35px;
+}
