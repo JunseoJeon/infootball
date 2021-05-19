@@ -48,3 +48,13 @@ function translateTeamName(teamName){
 			return teamName;
 		}
 }
+
+function translateLeagueName(leagueName){
+	switch(leagueName)
+	{
+		case "Premier League":
+		return "EPL";
+		default:
+			return leagueName;
+	}
+}

@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'HangeulNuri-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     margin: 0;
 }
@@ -11,6 +24,7 @@ header{
     font-size: 23px;
     font-weight: bold;
     border-bottom: #586173 4px solid;
+    z-index: 99;
 }
 main{
     padding-top:84px;
@@ -21,26 +35,28 @@ main{
 }
 
 section{
-    border: 1px solid blueviolet;
     
 }
 .fixture{
     grid-column: 1/3;
     position: relative;
     padding: 0 40px;
-
+    height: auto;
 }
 .fixtures{
-    border: 1px solid black;
     width: 100%;
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
+    box-shadow: 0px 2px 7px teal;
+    border-radius: 10px;
 }
 .fixt_btns{
     display: flex;
     justify-content: center;
     background-color: #3485A9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 input[type="date"]{
     width: 215px;
@@ -49,29 +65,36 @@ input[type="date"]{
     font-size: 19px;
     background: none;
     color: white;
-    font-weight: bold;
     border: none;
+    font-family: 'HangeulNuri-Bold';
 }
 .showFixt{
-    border: solid 1px black;
     margin-top: 5px;
     display: inline-block;
     
 }
 .showFixt table{
-    border: black 1px solid;
-    margin: 0 5px;
+    margin: 0 14px;
     float: left;
     padding: 0px;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
+    box-shadow: 0px 1px 5px thistle inset;
+    border-collapse: collapse;
+    font-family: 'NIXGONM-Vb';
 }
 .showFixt th{
-    width: 91px;
+    width: 86px;
+    background-color: rgb(236, 216, 216);
+    padding: 6px 2px;
 }
 .showFixt td{
-    width: 91px;
+    width: 86px;
     text-align: center;
-    
+    padding: 3px 2px;
+}
+.showFixt tr:last-child td{
+    font-size: 14px;
+    box-shadow: 0px 1px 1px rgb(6, 175, 175) inset;
 }
 .showFixt td img{
     width: 35px;
