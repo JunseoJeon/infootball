@@ -5,7 +5,7 @@ function translateTeamName(teamName){
 		case "Leicester":
 			return "레스터 시티";
 		case "Crystal Palace":
-			return "크리스탈 팰리스";
+			return "크팰";
 		case "Manchester United":
 			return "맨유";
 		case "West Ham":
@@ -56,5 +56,17 @@ function translateLeagueName(leagueName){
 		return "EPL";
 		default:
 			return leagueName;
+	}
+}
+
+function translateStatus(status){
+	switch(status)
+	{
+		case "FT":
+			return "경기 종료";
+		case "NS":
+			return "경기 시작 전";
+		default:
+			return status;
 	}
 }

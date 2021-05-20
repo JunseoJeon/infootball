@@ -30,20 +30,16 @@ main{
     padding-top:84px;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
 }
 
-section{
-    
-}
-.fixture{
-    grid-column: 1/3;
+.fixtures-section{
     position: relative;
-    padding: 0 40px;
+    padding: 0 15px;
     height: auto;
 }
-.fixtures{
+.fixtures-wrap{
     width: 100%;
     max-width: 1200px;
     height: auto;
@@ -51,7 +47,7 @@ section{
     box-shadow: 0px 2px 7px teal;
     border-radius: 10px;
 }
-.fixt_btns{
+.fixture-input{
     display: flex;
     justify-content: center;
     background-color: #3485A9;
@@ -71,10 +67,10 @@ input[type="date"]{
 .showFixt{
     margin-top: 5px;
     display: inline-block;
-    
+    width: auto;
 }
 .showFixt table{
-    margin: 0 14px;
+    margin: 10px 11px;
     float: left;
     padding: 0px;
     margin-bottom: 6px;
@@ -82,37 +78,65 @@ input[type="date"]{
     border-collapse: collapse;
     font-family: 'NIXGONM-Vb';
 }
+
 .showFixt th{
-    width: 86px;
+    width: 120px;
     background-color: rgb(236, 216, 216);
-    padding: 6px 2px;
+    padding: 6px 3px;
 }
 .showFixt td{
-    width: 86px;
+    width: 120px;
     text-align: center;
-    padding: 3px 2px;
+    padding: 6px 3px;
 }
-.showFixt tr:last-child td{
-    font-size: 14px;
-    box-shadow: 0px 1px 1px rgb(6, 175, 175) inset;
-}
+
 .showFixt td img{
     width: 35px;
     height: 35px;
 }
 .googleAd{
-    grid-column: 1/3;
+    margin: 0 auto;
 }
-.standing_top{
-    grid-column: 1/3;
+.rank-section{
+    position: relative;
+    padding: 0 15px;
+}
+.rank-wrap{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 2px 7px teal;
+    border-radius: 10px;
 }
 .leagueSelect{
     grid-column: 1/3;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+    
 }
 
 .leagueSelect button{
     width: 200px;
     height: 50px;
+}
+
+.standing-topPlayer-wrap table{
+    
+    box-shadow: 0px 2px 7px teal;
+    margin: 20px 20px;
+}
+
+.standing-topPlayer-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.standing-topPlayer-wrap td img{
+    width: 20px;
+    height: 20px;
+}
+
+.standing-topPlayer-wrap td{
+    text-align: center;
 }

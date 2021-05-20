@@ -10,26 +10,90 @@
 <body>
     <header>InFootball</header>
     <main>
-        <section class="fixture">
-            <div class="fixtures"> 
-                <div class="fixt_btns">
-                    <label><input type="date" class="date" step=""></label>
+        <section class="fixtures-section">
+            <div class="fixtures-wrap"> 
+                <div class="fixture-input">
+                    <input type="date" class="date">
                 </div>
                 <div class="showFixt">
+                    <table>
+                        <tr>
+                            <th>홈</th>
+                            <th class="time">EPL</th>
+                            <th>어웨이</th>
+                        </tr>
+                        <tr>
+                            <td><img src="https://media.api-sports.io/football/teams/33.png"><br>헤르타 베를린</td>
+                            <td class="time">02:00</td>
+                            <td><img src="https://media.api-sports.io/football/teams/33.png"><br>아우크스부르크</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="time">02:00</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">dawdawdawd</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>홈</th>
+                            <th class="time">EPL</th>
+                            <th>어웨이</th>
+                        </tr>
+                        <tr>
+                            <td class="team"><img src="https://media.api-sports.io/football/teams/33.png"><br>헤르타 베를린</td>
+                            <td class="time">02:00</td>
+                            <td class="team"><img src="https://media.api-sports.io/football/teams/33.png"><br>아우크스부르크</td>
+                        </tr>
+                        <tr>
+                            <td class="team">1</td>
+                            <td class="time">02:00</td>
+                            <td class="team">2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">dawdawdawd</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>홈</th>
+                            <th class="time">EPL</th>
+                            <th>어웨이</th>
+                        </tr>
+                        <tr>
+                            <td><img src="https://media.api-sports.io/football/teams/33.png"><br>헤르타 베를린</td>
+                            <td class="time">02:00</td>
+                            <td><img src="https://media.api-sports.io/football/teams/33.png"><br>아우크스부르크</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="time">02:00</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">dawdawdawd</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </section>
         <div class="googleAd">광고 칸</div>
-        <section class="standing_top">
-            <div class="leagueSelect">
-                <button value="39">프리미어리그</button>
-                <button value="140">라리가</button>
-                <button value="78">분데스리가</button>
-                <button value="61">리그앙</button>
-                <button value="135">세리에</button>
-            </div>
-            <div class="standing"></div>
-            <div class="top"></div>
+        <section class="rank-section">
+            <div class="rank-wrap">
+                <div class="leagueSelect">
+                    <button value="39">프리미어리그</button>
+                    <button value="140">라리가</button>
+                    <button value="78">분데스리가</button>
+                    <button value="61">리그앙</button>
+                    <button value="135">세리에</button>
+                </div>
+                <div class="standing-topPlayer-wrap">
+                    <div class="standing-wrap"></div>
+                    <div class="topPlayer-wrap"></div>
+                </div>
+            </div>      
         </section>
     </main>
 <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -37,5 +101,6 @@ integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="ano
 <script src="./JS/fixture.js"></script>
 <script src="./JS/getDate.js"></script>
 <script src="./JS/translate.js"></script>
+<script src="./JS/standing.js"></script>
 </body>
 </html>
