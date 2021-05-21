@@ -86,8 +86,3 @@ $('.date').change(function(e){
   };
 })
 
-$('.leagueSelect button').click(function(e){
-  let value = $(e.target).val();
-  console.log(value)
-})
-

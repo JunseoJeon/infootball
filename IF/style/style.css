@@ -70,7 +70,7 @@ input[type="date"]{
     width: auto;
 }
 .showFixt table{
-    margin: 10px 11px;
+    margin: 10px 10px;
     float: left;
     padding: 0px;
     margin-bottom: 6px;
@@ -113,12 +113,19 @@ input[type="date"]{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    
+    background-color: cornflowerblue;
+    border-radius: 10px;
 }
 
 .leagueSelect button{
-    width: 200px;
+    width: 20%;
     height: 50px;
+    background: none;
+    border-radius: 10px;
+    border: none;
+}
+.leagueSelect button:hover{
+    background-color: chocolate;
 }
 
 .standing-topPlayer-wrap table{
@@ -139,4 +146,23 @@ input[type="date"]{
 
 .standing-topPlayer-wrap td{
     text-align: center;
+}
+
+.topPlayer-table{
+    border-collapse: collapse;
+}
+
+.topPlayer-table td img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.topPlayer-thead-tr-button th{
+    width: 30%;
+}
+
+.topPlayer-tbody tr:nth-child(even){
+    background-color: cadetblue;
+
 }
